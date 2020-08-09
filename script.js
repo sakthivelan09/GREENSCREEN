@@ -18,7 +18,7 @@ function composite(){
   var dd3=document.getElementById("d3");
   for(var pix of fimage.values())
     {
-      if(pix.getGreen()>240)
+      if(pix.getGreen()>(pix.getRed()+pix.getBlue()))
         {
           var pixel=bimage.getPixel(pix.getX(),pix.getY());
           oimage.setPixel(pix.getX(),pix.getY(),pixel);
