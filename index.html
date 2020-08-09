@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - greenscreen</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js" >
+</script>
+<h1>GREEN SCREEN</h1>
+<canvas id="d1"></canvas>
+<canvas id="d2"></canvas>
+<canvas id="d3"></canvas>
+<p>
+  Green image:
+  <input type="file" mutilpe="false" accept="image/*" id="up" onchange="upload()"></p><p>Background image:
+<input type="file" mutilpe="false" accept="image/*" id="bup" onchange="bupload()">
+</p>
+<p>
+<input type="button" value="Composite" id="gs" onclick="composite()">
+</p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
